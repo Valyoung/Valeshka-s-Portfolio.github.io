@@ -5,12 +5,15 @@
 
 }
 
-.header .content-box {
-    content: url(assets/new\ cover2.png);
+.header .content-box  {
+    content: url(assets/pexels-photo-273222.png);
     background-position: center;
     background-size: cover;
     width: 100%;
-    height: 100%;
+    width: 100%;
+  height: auto;
+  z-index: 2;
+    
 }
 
 #heading {
@@ -24,6 +27,59 @@
 left: 115px;
 
 }
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+}
+
+#navigation {
+    position: absolute;
+  right: 0;
+  list-style: none;
+  float: right;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  overflow: hidden;
+
+
+}
+
+#nav {
+    position: relative;
+    font-size: 2.1em;
+    text-transform: uppercase;
+}
+
+
+ul li {
+    list-style: none;
+
+
+}
+
+
+.sci {
+    position: absolute;
+display: flex;   
+right: 100px;
+  list-style: none;
+
+ 
+}
+.sci a {
+    position: relative;
+    display: grid;
+    place-items: center;
+    width: 150px;
+    height: 120px;
+    text-decoration: none;
+}
+
+
 
 .banner-text {
     position: absolute;
@@ -33,7 +89,7 @@ left: 115px;
     text-align: center;
     font-family: 'Gloria Hallelujah', cursive;
     transform: translate(-50%, -50%);
-    color: rgb(204, 255, 255);    
+    color: rgb(30, 8, 107);    
 
 }
 .banner-text h2{
@@ -52,11 +108,55 @@ left: 115px;
     width: 100%;
 
 }
-h1{
-    text-align: center;
-    padding-top: 100px;
-}
+
 
 #typedOut {
     font-size: 20px;
 }
+
+footer { 
+    position:relative;
+    bottom:0;
+    z-index: 3;
+    }
+    #wrapper {
+        position: absolute;
+      bottom: 50px;
+        animation:pulse 1s infinite;
+    }
+    
+    
+    #pulsingheart { 
+      position: relative; 
+      width: 80px; 
+      height: 50px;
+    } 
+    
+    #pulsingheart:before, #pulsingheart:after { 
+      position: absolute; 
+      content: ""; 
+      left: 50px; 
+      top: 0; 
+      width: 50px; 
+      height: 80px; 
+      background: #aa0000; 
+      border-radius: 50px 50px 0 0; 
+      transform: rotate(-45deg);  
+      transform-origin: 0 100%;
+      animation:pulsecolor 1s infinite;
+    } 
+    
+    #pulsingheart:after { 
+      left: 0; 
+      transform: rotate(45deg); 
+      transform-origin :100% 100%;
+      animation:pulsecolor 1s infinite;
+    }
+    
+    @keyframes pulse {
+        10% {transform: scale(1.1)}
+    }
+    
+    @keyframes pulsecolor {
+      10% {background: #dd0000}
+    }

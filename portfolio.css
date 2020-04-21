@@ -1,0 +1,100 @@
+body { margin: 0;}
+.app-container { 
+  position: relative; 
+  font-family: 'Gloria Hallelujah', cursive;
+}
+.portfolio-box { 
+  width: 50%; 
+  height: 600px; 
+  float: left; 
+  position: relative;
+  overflow: hidden;
+}
+.portfolio-box.blue { background-color:rgba(125, 236, 255, 0.842);}
+.portfolio-box.purple { background-color: rgba(17, 15, 15, 0.651);}
+.portfolio-box.green { background-color: rgb(17, 15, 15, 0.651);}
+.portfolio-box.dark-blue { background-color: rgba(125, 236, 255, 0.842);}
+
+.info-box { 
+  background-color:rgba(236, 240, 241, 1); 
+  transition: all .33s ease-in; 
+  width: 50%; 
+  height: 100%; 
+  position: absolute;
+  top: 0; 
+}
+.portfolio-box:nth-child(2n) .info-box { background-color: #bdc3c7}
+.portfolio-box:nth-child(2n) .info-box {left: -50%}
+.portfolio-box:nth-child(2n):hover .info-box {left: 0%}
+.portfolio-box:nth-child(2n-1) .info-box {right:-50%;}
+.portfolio-box:nth-child(2n-1):hover .info-box { right: 0px}
+
+.info { padding: 30px; }
+body header{
+font-family: 'Gloria Hallelujah', cursive;
+font-size: 45px;
+}
+span {
+    text-align: center;
+
+}
+
+.card { 
+  margin: 0 auto; 
+  float: none; 
+  margin-bottom: 10px; 
+  font-family: 'Gloria Hallelujah', cursive;
+}
+#pulsingheart { 
+  position: relative; 
+  width: 80px; 
+  height: 50px;
+} 
+
+#pulsingheart:before, #pulsingheart:after { 
+  position: absolute; 
+  content: ""; 
+  left: 50px; 
+  top: 0; 
+  width: 50px; 
+  height: 80px; 
+  background: #aa0000; 
+  border-radius: 50px 50px 0 0; 
+  transform: rotate(-45deg);  
+  transform-origin: 0 100%;
+  animation:pulsecolor 1s infinite;
+} 
+
+#pulsingheart:after { 
+  left: 0; 
+  transform: rotate(45deg); 
+  transform-origin :100% 100%;
+  animation:pulsecolor 1s infinite;
+}
+
+@keyframes pulse {
+    10% {transform: scale(1.1)}
+}
+
+@keyframes pulsecolor {
+  10% {background: #dd0000}
+}
+#forms {
+  color: rgba(245, 245, 245, 0.562);
+    margin: 0 auto; 
+    float: none; 
+    margin-bottom: 10px; 
+    font-family: 'Gloria Hallelujah', cursive;
+    width:20% ;
+  
+}
+
+#coffee {
+  background-image: url(/assets/pexels-photo-777001.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+
